@@ -1,6 +1,11 @@
 name: Manual Update
 on: [ workflow_dispatch ]
 
+permissions:
+  actions: write
+  checks: write
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
